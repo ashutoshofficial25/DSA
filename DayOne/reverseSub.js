@@ -6,6 +6,9 @@ function checkRverse(arr) {
   }
 
   // find increasing part
+  for (i = n; i < n && arr[i - 1] < arr[i]; i++) {
+    console.log(i);
+  }
 }
 
 let arr = [1, 3, 4, 10, 9, 8, 12, 15, 16];
