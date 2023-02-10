@@ -11,7 +11,7 @@ function isAnagram(string1, string2) {
   let map = new Map();
   for (let i = 0; i < string1.length; i++) {
     if (map.has(string1[i])) {
-      let count = map.get(a[i]);
+      let count = map.get(string1[i]);
       count++;
       map.set(string1[i], count);
     } else {
@@ -41,3 +41,4 @@ function isAnagram(string1, string2) {
   }
   return true;
 }
+console.log(isAnagram("tgzonrrftzq", "tqzzrtnrftg"));
