@@ -1,5 +1,8 @@
 //Iterative approach for binary search
 
+//choosing the mid element
+//why r+l/2 no-> if we have r = INTEGER_MAX , then we cannot add anything to it;
+//mid =  l + Math.floor((r-l)/2)
 function binarySearcha(array, x) {
   let l = 0;
   let r = array.length - 1;
